@@ -1,0 +1,240 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container_principal {  
+  width: 100%;  
+  height: 8vh;  
+  background-color: #4751dd;  
+  display: flex;  
+  justify-content: flex-end;  
+  align-items: center;
+}
+.container_header {  
+  width: 65%;  
+  display: flex;  
+  justify-content: space-between;  
+  padding: 0.4rem;  
+  align-items: center;
+}
+.inputHeader {  
+  border: none;  
+  padding: 0.4rem;  
+  border-radius: 0.4rem;  
+  outline: none;  
+  height: 2vh;  
+  width: 20vw;  
+  font-size: 1.5vh;
+}
+.header_search {  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;  
+  gap: 1vh;
+}
+.buttonSearch {  
+  border: 1px solid white;  
+  border-radius: 0.4rem;  
+  background-color: transparent;  
+  padding: 0.4rem;   
+  width: 11vw;  
+  color: white;  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;
+}
+.buttonSearch:hover, .header_buttonAdd:hover {  
+  transition: 0.5s;  
+  cursor: pointer;  
+  background-color: white;  
+  color: #4751dd;
+}
+.header_buttonAdd {  
+  width: 20vw;  
+  padding: 0.4rem;  
+  border: 1px solid white;  
+  border-radius: 0.4rem;  
+  color: white;  
+  background-color: transparent;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;
+}
+.container_view {  
+  display: grid;  
+  grid-template-columns: 0.2fr 0.8fr;
+}
+.listAside {  
+  background-color: #4751dd;  
+  height: 92vh;
+}
+.store {  
+  background-color: #eeee;  
+  max-height: 92vh;  
+  overflow-y: auto;  
+  width: 100%;
+}
+.sectionStore { 
+  background-color: #fff; 
+  margin: 1rem; 
+  padding: 1rem; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+.containerProductStore {  
+  width: 100%;  
+  display: grid;  
+  grid-template-columns: repeat(3,0.6fr);  
+  flex-direction: column;  
+  gap: 1rem;
+}
+.containerTargetItem {  
+  width: 25vw;  
+  height: 35vh;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;
+  padding: 0.4rem;
+  box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+.containerTitleSection{  
+  margin: 1rem;  
+  font-size: 3vh;  
+  border-bottom: 1px solid grey;
+}
+.targetProps{   
+  display: flex;   
+  flex-direction: column;   
+  align-items: center;   
+  justify-content: space-between;  
+  width: 100%;
+}
+.containerTargetItem p{  
+  font-size: 3vh;  
+  text-align: center;
+}
+.sectionStore img {  
+  width: 100%;  
+  border-radius: 0.4rem;  
+  box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+}
+.listAside {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;
+}
+.listAside h2 {  
+  display: flex;  
+  margin-top: 2vh;  
+  font-size: 3vh;  
+  justify-content: center;  
+  align-items: center;
+}
+.listAside ul {  
+  margin-top: 3vh;  
+  list-style: none;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: flex-start;  
+  justify-content: space-between;  
+  gap: 1vh;
+}
+.listAside ul li { 
+  font-size: 2vh; 
+  font-weight: 500; 
+  padding: 0.4rem; 
+  border-radius: 0.4rem;
+}
+.liActive {  
+  background-color: #1e3f72;  
+  color: white;
+}
+.popUpContainer_principal {  
+  width: 100vw;  
+  height: 100vh;  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  display: none;  
+  justify-content: center;  
+  align-items: center;  
+  backdrop-filter: blur(4px);
+}
+.popUpContainer {  
+  width: 60vw;  
+  height: 50vh;  
+  background-color: white;  
+  box-shadow: 5px 2px 10px 10px rgba(0, 0, 0, 0.3);  
+  border-radius: 0.4rem;  
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-around;
+}
+.containerTitle_popUp {  
+  width: 100%;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;
+}
+.containerInputs_popUp {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: center;  
+}
+.containerInputs_popUp input, .containerInputs_popUp select {  
+  width: 60%;  
+  padding: 0.4rem;  
+  border-radius: 0.4rem;  
+  border: 1px solid grey;
+}
+.containerButtonsPopUp {  
+  width: 100%;  
+  display: flex;  
+  justify-content: space-around;
+}
+.buttonPopUp {  
+  padding: 0.6rem;  
+  border-radius: 0.4rem;  
+  border: none;  
+  font-weight: 500;  
+  font-size: 1.5vh;
+}
+.cancel {  
+  background-color: yellow;  
+  color: white;
+}
+.accept {  
+  background-color: green;  
+  color: white;
+}
+.delete {  
+  background-color: red;  
+  color: white;
+}
+.containerTargetItem.pointer {  
+  cursor: pointer;  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.containerTargetItem.pointer:hover {  
+  transform: scale(1.05);  
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.listAside ul li { 
+  font-size: 2vh; 
+  font-weight: 500; 
+  padding: 0.4rem; 
+  border-radius: 0.4rem; 
+  cursor: pointer;
+}
+
+.liActive {  
+  background-color: #1e3f72;  
+  color: white;
+}
